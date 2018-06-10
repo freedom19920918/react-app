@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import App from './app';
 
-ReactDOM.render(<div style={{color:'red'}}>this ddddddDFGDFG react-app</div>, document.getElementById('react-app'));
+ReactDOM.render(<App/>, document.getElementById('react-app'));
 

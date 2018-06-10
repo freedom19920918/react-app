@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const htmlWebpackPlugin = require('html-webpack-plugin');
 const config = {
     entry: './src/index.js',
     output: {
@@ -17,22 +18,17 @@ const config = {
                         presets: ['react','es2015',"stage-0"],
                     }
                 },
-
             }
         ]
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
+        new htmlWebpackPlugin({
+            template:'./src/index.html',
+        }),
     ],
     devServer: {
         port: 9000,
-        hot: true,
-        openPage: 'src/',
-        // publicPath: '/src/',
-        inline: true,
-        // open: true,
-        // contentBase: './dist',
-        // historyApiFallback: true,
         stats: {
             modules: false,
             color: false,
