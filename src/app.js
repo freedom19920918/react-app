@@ -5,7 +5,7 @@ import {syncHistoryWithStore} from 'mobx-react-router';
 import {Router} from 'react-router';
 import stores from './stores';
 
-import Layout from './pages/Layout';
+import Layout from './pages/layout/Layout';
 
 const history = syncHistoryWithStore(createBrowserHistory(), stores.routing);
 
