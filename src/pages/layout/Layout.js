@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Sidebar from './Sidebar';
+import PageBody from './PageBody';
 
 export default class Layout extends Component {
   render() {
@@ -16,7 +17,7 @@ export default class Layout extends Component {
               <Sidebar/>
             </div>
             <div className="page-body">
-
+              <PageBody/>
             </div>
           </div>
           <div className="page-footer">
