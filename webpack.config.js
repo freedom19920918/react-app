@@ -39,6 +39,7 @@ const config = {
   ],
   devServer: {
     port: 9000,
+    historyApiFallback:true,
     hot: true,
     stats: {
       modules: false,
